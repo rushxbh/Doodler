@@ -1,0 +1,85 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+#toolbar {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 320px;
+    position: relative;
+}
+
+#drag-handle {
+    cursor: move;
+    font-weight: bold;
+    color: #aaa;
+    padding: 4px 8px;
+    margin-right: 8px;
+    user-select: none;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #eee;
+    padding: 0 8px;
+}
+
+button,
+#import-label {
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover,
+#import-label:hover {
+    background-color: #f0f0f0;
+    border-color: #ddd;
+}
+
+button.active {
+    background-color: #e0e8ff;
+    border-color: #c0d0ff;
+}
+
+button svg,
+#import-label svg {
+    width: 16px;
+    height: 16px;
+    color: #555;
+}
+
+input[type="color"] {
+    width: 24px;
+    height: 24px;
+    border: none;
+    padding: 0;
+    margin: 0 4px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input[type="range"] {
+    width: 60px;
+    margin: 0 4px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+}

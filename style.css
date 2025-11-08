@@ -1,0 +1,18 @@
+/* * Styles for injected content script elements.
+ */
+
+/* Style for the text highlights */
+.web-annotator-highlight {
+    /* Use a semi-transparent background color */
+    background-color: rgba(255, 255, 0, 0.4); 
+    border-radius: 2px;
+}
+
+/* * Ensure the canvas does not intercept mouse events
+ * when not in drawing mode (though this is primarily
+ * handled by display:none and pointer-events in JS).
+ */
+#web-annotator-canvas {
+    /* Set via JS, but good to have a default */
+    pointer-events: none; 
+}
